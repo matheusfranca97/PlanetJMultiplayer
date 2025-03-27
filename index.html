@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1600 height=900 tabindex="-1" style="width: 1600px; height: 900px; background: #231F20"></canvas>
-    <script src="Build/Multiplayer.loader.js"></script>
+    <script src="Build/PlanetJMultiplayer.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Multiplayer.data",
-        frameworkUrl: "Build/Multiplayer.framework.js",
-        codeUrl: "Build/Multiplayer.wasm",
+        dataUrl: "Build/PlanetJMultiplayer.data",
+        frameworkUrl: "Build/PlanetJMultiplayer.framework.js",
+        codeUrl: "Build/PlanetJMultiplayer.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "PlanetJ",
